@@ -10,7 +10,6 @@ function App() {
   const [result, setResult] = useState('');
   const [index, setIndex] = useState(0);
 
-
   useEffect(() => {
     const timeout = setTimeout(() => {
       setFlashWord(false);
@@ -48,8 +47,8 @@ function App() {
   };
 
   return (
-    <div class="mini-game-container">
-      <h2 class="mini-game-title">Mini Game</h2>
+    <div className="mini-game-container">
+      <h2 className="mini-game-title">Mini Game</h2>
       {flashWord && <p className="mini-game-word">{word}</p>}
       {!flashWord && (
         <form className="mini-game-form" onSubmit={handleFormSubmit}>
